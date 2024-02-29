@@ -1,0 +1,45 @@
+body{
+  background-color:rgb(25, 25,25);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+  justify-content: space-between;
+  
+}
+
+.game-title{
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+}
+
+.rock-image,
+.scissors-image,
+.paper-image{
+  width: 100%;
+  ;
+}
+.rock-button,
+.move-icon,
+.paper-button,
+.scissors-button{
+  background-color: transparent;
+  width: 120px;
+  border-radius: 60px;
+  border: 3px solid white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.outcome{
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.game-result{
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 25px;
+  
+}

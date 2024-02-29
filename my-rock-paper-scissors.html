@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="my-rock-paper-scissors.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style="font-family: Roboto,Arial;">
+
+  <p class="game-title">Rock Paper Scissors</p>
+  <div>
+
+  <button class="rock-button"  onclick="
+    pickPlayerMove('Rock')"
+  ><img  class="rock-image" src="rock-emoji.png" alt="This is a rock image"></button>
+
+  <button class="paper-button" onclick="
+    pickPlayerMove('Paper')
+  "><img class="paper-image" src="paper-emoji.png" alt="This is a paper image"></button>
+
+  <button class="scissors-button" onclick="
+    pickPlayerMove('Scissors')
+  "><img  class="scissors-image" src="scissors-emoji.png" alt="This is a scissors image"></button> 
+ 
+</div>
+
+  <p class="js-game-result game-result"></p>
+  <p class="js-moves">
+  </p>
+
+  
+  <p class="js-outcome outcome"></p> 
+  
+  <button onclick="
+    score.Losses=0;
+    score.Wins=0;
+    score.Ties=0;
+
+    updateScore();
+    localStorage.removeItem('score');
+  ">Reset</button>
+  
+  <script src="rock-paper-scissors.js"></script>
+</body>
+</html>
